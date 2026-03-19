@@ -1,7 +1,7 @@
 !function(t,e){if("object"==typeof exports&&"object"==typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var n=e();for(var o in n)("object"==typeof exports?exports:t)[o]=n[o]}}(self,(()=>(()=>{"use strict";var t={1717:function(t,e,n){
 /*
  * HSToggleCount
- * @version: 4.1.2
+ * @version: 4.1.3
  * @author: Preline Labs Ltd.
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2024 Preline Labs Ltd.
@@ -9,7 +9,7 @@
 var o=this&&this.__importDefault||function(t){return t&&t.__esModule?t:{default:t}};Object.defineProperty(e,"__esModule",{value:!0});const i=o(n(2961));class s extends i.default{constructor(t,e){super(t,e);const n=t.getAttribute("data-hs-toggle-count"),o=n?JSON.parse(n):{},i=Object.assign(Object.assign({},o),e);this.target=(null==i?void 0:i.target)?"string"==typeof(null==i?void 0:i.target)?document.querySelector(i.target):i.target:null,this.min=(null==i?void 0:i.min)||0,this.max=(null==i?void 0:i.max)||0,this.duration=(null==i?void 0:i.duration)||700,this.isChecked=this.target.checked||!1,this.target&&this.init()}toggleChange(){this.isChecked=!this.isChecked,this.toggle()}init(){this.createCollection(window.$hsToggleCountCollection,this),this.isChecked&&(this.el.innerText=String(this.max)),this.onToggleChangeListener=()=>this.toggleChange(),this.target.addEventListener("change",this.onToggleChangeListener)}toggle(){this.isChecked?this.countUp():this.countDown()}animate(t,e){let n=0;const o=i=>{n||(n=i);const s=Math.min((i-n)/this.duration,1);this.el.innerText=String(Math.floor(s*(e-t)+t)),s<1&&window.requestAnimationFrame(o)};window.requestAnimationFrame(o)}countUp(){this.animate(this.min,this.max)}countDown(){this.animate(this.max,this.min)}destroy(){this.target.removeEventListener("change",this.onToggleChangeListener),window.$hsToggleCountCollection=window.$hsToggleCountCollection.filter((({element:t})=>t.el!==this.el))}static getInstance(t,e){const n=window.$hsToggleCountCollection.find((e=>e.element.el===("string"==typeof t?document.querySelector(t):t)));return n?e?n:n.element:null}static autoInit(){window.$hsToggleCountCollection||(window.$hsToggleCountCollection=[]),window.$hsToggleCountCollection&&(window.$hsToggleCountCollection=window.$hsToggleCountCollection.filter((({element:t})=>document.contains(t.el)))),document.querySelectorAll("[data-hs-toggle-count]:not(.--prevent-on-load-init)").forEach((t=>{window.$hsToggleCountCollection.find((e=>{var n;return(null===(n=null==e?void 0:e.element)||void 0===n?void 0:n.el)===t}))||new s(t)}))}}e.default=s},2961:(t,e)=>{
 /*
  * HSBasePlugin
- * @version: 4.1.2
+ * @version: 4.1.3
  * @author: Preline Labs Ltd.
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2024 Preline Labs Ltd.

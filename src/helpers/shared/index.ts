@@ -1,5 +1,5 @@
 /*
- * * @version: 4.1.2
+ * * @version: 4.1.3
  * @author: Preline Labs Ltd.
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2026 Preline Labs Ltd.

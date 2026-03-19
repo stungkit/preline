@@ -53,10 +53,10 @@
   }
 
   &:hover {
-    @apply text-primary-600;
+    @apply text-blue-600;
 
     &::before {
-      @apply border-primary-600;
+      @apply border-blue-600;
     }
   }
 
@@ -83,11 +83,11 @@
   }
 
   &[data-vc-date-today] {
-    @apply bg-primary-600 text-white;
+    @apply bg-blue-600 text-white;
   }
 
   &[data-vc-date-selected] {
-    @apply bg-primary-600;
+    @apply bg-blue-600;
 
     &:not([data-vc-date-selected="middle"]) {
       @apply text-white;
@@ -123,7 +123,7 @@
     @apply text-white;
 
     &::before {
-      @apply bg-primary-600;
+      @apply bg-blue-600;
     }
   }
 
@@ -177,7 +177,7 @@
   }
 
   &[data-vc-months-month-selected] {
-    @apply bg-primary-600 border-primary-600 text-white;
+    @apply bg-blue-600 border-blue-600 text-white;
   }
 }
 
@@ -191,7 +191,7 @@
   }
 
   &[data-vc-months-month-selected] {
-    @apply bg-primary-500 border-primary-500;
+    @apply bg-blue-500 border-blue-500;
   }
 }
 
@@ -236,7 +236,7 @@
   }
 
   &[data-vc-years-year-selected] {
-    @apply bg-primary-600 border-primary-600 text-white;
+    @apply bg-blue-600 border-blue-600 text-white;
   }
 }
 
@@ -250,7 +250,7 @@
   }
 
   &[data-vc-years-year-selected] {
-    @apply bg-primary-500 border-primary-500;
+    @apply bg-blue-500 border-blue-500;
   }
 }
 

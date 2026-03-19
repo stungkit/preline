@@ -1,7 +1,7 @@
 var t={615:(t,o,i)=>{i.d(o,{A:()=>e});
 /*
  * HSBasePlugin
- * @version: 4.1.2
+ * @version: 4.1.3
  * @author: Preline Labs Ltd.
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2024 Preline Labs Ltd.
@@ -9,7 +9,7 @@ var t={615:(t,o,i)=>{i.d(o,{A:()=>e});
 class e{constructor(t,o,i){this.el=t,this.options=o,this.events=i,this.el=t,this.options=o,this.events={}}createCollection(t,o){var i,e;let n=t;if(!Array.isArray(n)&&"undefined"!=typeof window){const t=null===(i=this.constructor)||void 0===i?void 0:i.name,o="string"==typeof t&&t.startsWith("HS")?`$hs${t.slice(2)}Collection`:null;o&&(Array.isArray(window[o])||(window[o]=[]),n=window[o])}Array.isArray(n)&&n.push({id:(null===(e=null==o?void 0:o.el)||void 0===e?void 0:e.id)||n.length+1,element:o})}fireEvent(t,o=null){if(this.events.hasOwnProperty(t))return this.events[t](o)}on(t,o){this.events[t]=o}}}},o={};function i(e){var n=o[e];if(void 0!==n)return n.exports;var s=o[e]={exports:{}};return t[e](s,s.exports,i),s.exports}i.d=(t,o)=>{for(var e in o)i.o(o,e)&&!i.o(t,e)&&Object.defineProperty(t,e,{enumerable:!0,get:o[e]})},i.o=(t,o)=>Object.prototype.hasOwnProperty.call(t,o);var e={};i.d(e,{A:()=>r});var n=i(615);
 /*
  * HSRangeSlider
- * @version: 4.1.2
+ * @version: 4.1.3
  * @author: Preline Labs Ltd.
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2024 Preline Labs Ltd.

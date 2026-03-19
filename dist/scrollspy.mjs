@@ -1,14 +1,14 @@
 var e={615:(e,t,l)=>{l.d(t,{A:()=>s});
 /*
  * HSBasePlugin
- * @version: 4.1.2
+ * @version: 4.1.3
  * @author: Preline Labs Ltd.
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2024 Preline Labs Ltd.
  */
 class s{constructor(e,t,l){this.el=e,this.options=t,this.events=l,this.el=e,this.options=t,this.events={}}createCollection(e,t){var l,s;let o=e;if(!Array.isArray(o)&&"undefined"!=typeof window){const e=null===(l=this.constructor)||void 0===l?void 0:l.name,t="string"==typeof e&&e.startsWith("HS")?`$hs${e.slice(2)}Collection`:null;t&&(Array.isArray(window[t])||(window[t]=[]),o=window[t])}Array.isArray(o)&&o.push({id:(null===(s=null==t?void 0:t.el)||void 0===s?void 0:s.id)||o.length+1,element:t})}fireEvent(e,t=null){if(this.events.hasOwnProperty(e))return this.events[e](t)}on(e,t){this.events[e]=t}}},926:(e,t,l)=>{l.d(t,{JD:()=>o,gj:()=>s});
 /*
- * @version: 4.1.2
+ * @version: 4.1.3
  * @author: Preline Labs Ltd.
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2024 Preline Labs Ltd.
@@ -16,7 +16,7 @@ class s{constructor(e,t,l){this.el=e,this.options=t,this.events=l,this.el=e,this
 const s=(e,t,l="")=>(window.getComputedStyle(e).getPropertyValue(t)||l).replace(" ",""),o=(e,t,l=null)=>{const s=new CustomEvent(e,{detail:{payload:l},bubbles:!0,cancelable:!0,composed:!1});t.dispatchEvent(s)}}},t={};function l(s){var o=t[s];if(void 0!==o)return o.exports;var i=t[s]={exports:{}};return e[s](i,i.exports,l),i.exports}l.d=(e,t)=>{for(var s in t)l.o(t,s)&&!l.o(e,s)&&Object.defineProperty(e,s,{enumerable:!0,get:t[s]})},l.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t);var s={};l.d(s,{A:()=>n});var o=l(926),i=l(615);
 /*
  * HSScrollspy
- * @version: 4.1.2
+ * @version: 4.1.3
  * @author: Preline Labs Ltd.
  * @license: Licensed under MIT and Preline UI Fair Use License (https://preline.co/docs/license.html)
  * Copyright 2024 Preline Labs Ltd.
